@@ -68,8 +68,8 @@ if(mode == "production"):
     print("Bjoern is running.")
     bjoern.run(app, "0.0.0.0", 5016)
 elif(mode == "testing"):
-    from flask_cors import CORS
-    CORS(app)
+    # from flask_cors import CORS
+    # CORS(app)
     app.run(debug=True)
 else:
     print("Invalid mode, please select either 'production' or 'testing'")
